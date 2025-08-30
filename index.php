@@ -11,11 +11,11 @@
 <div class="grid">
     <!-- KART 1 -->
     <article class="card" aria-label="Spor Ayakkabı ürünü">
-        <img class="card__img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop" alt="Ürün fotoğrafı: Spor ayakkabı" />
+        <img class="card__img" src="src/gheyme.jpg" alt="Ürün fotoğrafı: Spor ayakkabı" />
         <div class="card__body">
-            <h3 class="card__title">Spor Ayakkabı</h3>
-            <p class="card__desc">Günlük kullanım için hafif ve nefes alabilir.</p>
-            <div class="card__price">₺1.299</div>
+            <h3 class="card__title">Gheyme</h3>
+            <p class="card__desc">Açıklama</p>
+            <div class="card__price">₺160</div>
         </div>
     </article>
 
