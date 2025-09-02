@@ -43,5 +43,10 @@ $result = $conn->query($sql);
     $conn->close();
     ?>
 </div>
+
+<button onclick="window.print();" class="noPrint">Print</button>
 </body>
+<script>
+
+</script>
 </html>
