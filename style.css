@@ -42,3 +42,45 @@
     .card { transition: transform .15s ease, box-shadow .15s ease; }
     .card:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(0,0,0,.12); }
 }
+
+.mainButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* butonlar arası boşluk */
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    height: auto;
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.btn {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+@media (min-width: 600px) {
+    .mainButtons {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .btn {
+        flex: 1;
+    }
+}
