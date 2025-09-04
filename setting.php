@@ -26,7 +26,6 @@ $result = $conn->query($sql);
 </head>
 <body>
 <div class="mainButtons noPrint">
-    <button class="btn" onclick="window.print();" class="noPrint">Print</button>
     <button class="btn" onclick="location.href = 'index.php'">Main</button>
     <input type="text">
     <button class="btn">Search</button>
@@ -42,6 +41,7 @@ $result = $conn->query($sql);
                     <h3 class="card__title"><?php echo htmlspecialchars($row['fd_name']); ?></h3>
                     <p class="card__desc"><?php echo htmlspecialchars($row['fd_desc']); ?></p>
                     <div class="card__price"><?php echo htmlspecialchars($row['fd_price']); ?>₺</div>
+                    <button class="card__price">Add</button>
                 </div>
             </article>
             <?php
