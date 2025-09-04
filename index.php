@@ -11,6 +11,7 @@
 <div class="mainButtons">
     <button class="btn" onclick="location.href = 'menu.php'">Menu</button>
     <button class="btn" onclick="location.href = 'setting.php'">Settings</button>
+    <button class="btn" onclick="location.href = 'adding.php'">New Food</button>
 </div>
 
 </body>
