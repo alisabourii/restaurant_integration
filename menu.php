@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 $servername = "localhost";
 $username   = "root";
 $password   = "";
@@ -22,6 +25,11 @@ $result = $conn->query($sql);
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+<div class="mainButtons noPrint">
+    <button class="btn" onclick="window.print();" class="noPrint">Print</button>
+    <button class="btn" onclick="location.href = 'index.php'">Main</button>
+    <button class="btn" onclick="location.href = 'setting.php'">Settings</button>
+</div>
 <div class="grid">
     <?php
     if ($result->num_rows > 0) {
@@ -44,7 +52,6 @@ $result = $conn->query($sql);
     ?>
 </div>
 
-<button onclick="window.print();" class="noPrint">Print</button>
 </body>
 <script>
 
