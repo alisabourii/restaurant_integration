@@ -27,21 +27,21 @@ $result = $conn->query($sql);
 <body>
 <div class="mainButtons noPrint">
     <button class="btn" onclick="location.href = 'index.php'">Main</button>
-    <input type="text">
-    <button class="btn">Search</button>
+    <input type="text" id="foodName">
+    <button class="btn" onclick="searching()">Search</button>
 </div>
 <div class="grid">
     <?php
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             ?>
-            <article class="card" aria-label="<?php echo htmlspecialchars($row['fd_name']); ?>">
+            <article class="card" aria-label="<?php echo htmlspecialchars($row['fd_id']); ?>" id="<?php echo htmlspecialchars($row['fd_id']); ?>">
                 <img class="card__img" src="src/<?php echo htmlspecialchars($row['fd_img']); ?>" alt="Ürün fotoğrafı: <?php echo htmlspecialchars($row['fd_name']); ?>" />
                 <div class="card__body">
                     <h3 class="card__title"><?php echo htmlspecialchars($row['fd_name']); ?></h3>
                     <p class="card__desc"><?php echo htmlspecialchars($row['fd_desc']); ?></p>
                     <div class="card__price"><?php echo htmlspecialchars($row['fd_price']); ?>₺</div>
-                    <button class="card__price">Add</button>
+                    <button class="btn" onclick="alert(<?php echo htmlspecialchars($row['fd_id']); ?>)">Add</button>
                 </div>
             </article>
             <?php
@@ -55,6 +55,10 @@ $result = $conn->query($sql);
 
 </body>
 <script>
-
+    function searching(){
+        var foodName = document.getElementById("foodName").value;
+        //alert(foodName);
+        window.location="#"+foodName+"";
+    }
 </script>
 </html>
