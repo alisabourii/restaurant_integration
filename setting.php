@@ -28,8 +28,8 @@ $result = $conn->query($sql);
 <div class="mainButtons noPrint">
     <button class="btn" onclick="window.print();" class="noPrint">Print</button>
     <button class="btn" onclick="location.href = 'index.php'">Main</button>
-    <button class="btn" onclick="location.href = 'setting.php'">Settings</button>
     <input type="text">
+    <button class="btn">Search</button>
 </div>
 <div class="grid">
     <?php
