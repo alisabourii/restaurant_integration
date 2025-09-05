@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="mainButtons">
+    <button class="btn" onclick="location.href = 'menu.php'">Menu</button>
+    <button class="btn" onclick="location.href = 'setting.php'">Settings</button>
+    <button class="btn" onclick="location.href = 'addfod.php'">New Food</button>
+</div>
+
+<div>
+    <form method="get" action="addfod.php">
+        <input type="file">
+        <input type="text" placeholder="Yemek Adı">
+        <input type="text" placeholder="Açıklama">
+        <input type="text" placeholder="Fiyat">
+        <button>Kaydet</button>
+    </form>
+</div>
+</body>
+</html>
