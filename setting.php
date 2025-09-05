@@ -42,7 +42,7 @@ $result = $conn->query($sql);
                     <h3 class="card__title"><?php echo htmlspecialchars($row['fd_name']); ?></h3>
                     <p class="card__desc"><?php echo htmlspecialchars($row['fd_desc']); ?></p>
                     <div class="card__price"><?php echo htmlspecialchars($row['fd_price']); ?>₺</div>
-                    <button class="btn" onclick="updateStatus(<?php echo htmlspecialchars($row['fd_id']); ?>)">Remove</button>
+                    <button class="btn" onclick="updateStatusRemove(<?php echo htmlspecialchars($row['fd_id']); ?>)">Remove</button>
                 </div>
             </article>
             <?php
@@ -73,14 +73,22 @@ $result = $conn->query($sql);
 <script>
     function searching(){
         var foodName = document.getElementById("foodName").value;
-        //alert(foodName);
         window.location="#"+foodName+"";
     }
 
     function updateStatus(id){
-        fetch("update.php?id=" + id)
+        var sts = 1;
+        fetch("update.php?id=" + id+"&status="+sts)
             .then(res => res.text())
-            .then(data => alert(data));
+            .then(location.reload());
+
     }
+    function updateStatusRemove(id){
+        var sts = 0;
+        fetch("update.php?id=" + id+"&status="+sts)
+            .then(res => res.text())
+            .then(location.reload());
+    }
+
 </script>
 </html>
