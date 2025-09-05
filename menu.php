@@ -34,6 +34,7 @@ $result = $conn->query($sql);
     <?php
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
+            if($row["stok"]==1){
             ?>
             <article class="card" aria-label="<?php echo htmlspecialchars($row['fd_name']); ?> ürünü">
                 <img class="card__img" src="src/<?php echo htmlspecialchars($row['fd_img']); ?>" alt="Ürün fotoğrafı: <?php echo htmlspecialchars($row['fd_name']); ?>" />
@@ -44,6 +45,7 @@ $result = $conn->query($sql);
                 </div>
             </article>
             <?php
+            }
         }
     } else {
         echo "Tabloda veri yok.";
