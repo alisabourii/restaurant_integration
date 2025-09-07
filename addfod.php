@@ -7,6 +7,7 @@
 </head>
 <body>
 <div class="mainButtons">
+    <button class="btn" onclick="location.href = 'index.php'">Main</button>
     <button class="btn" onclick="location.href = 'menu.php'">Menu</button>
     <button class="btn" onclick="location.href = 'setting.php'">Settings</button>
 </div>
