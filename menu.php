@@ -26,8 +26,8 @@ $result = $conn->query($sql);
 </head>
 <body>
 <div class="mainButtons noPrint">
-    <button class="btn" onclick="window.print();" class="noPrint">Print</button>
     <button class="btn" onclick="location.href = 'index.php'">Main</button>
+    <button class="btn" onclick="window.print();" class="noPrint">Print</button>
     <button class="btn" onclick="location.href = 'setting.php'">Settings</button>
 </div>
 <div class="grid">
