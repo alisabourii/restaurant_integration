@@ -25,11 +25,26 @@
     <button class="btn" onclick="loginControl()">Login</button>
 </div>
 
-<div class="mainButtons" id="btns" >
-    <button class="btn" onclick="location.href = 'menu.php'" >Menu</button>
-    <button class="btn" onclick="location.href = 'setting.php'">Settings</button>
-    <button class="btn" onclick="location.href = 'addfod.php'" >New Food</button>
+<div class="mainButtons">
+    <button class="btn" id="btn1"  onclick="location.href = 'menu.php'" disabled>Menu</button>
+    <button class="btn" id="btn2"  onclick="location.href = 'setting.php'" disabled>Settings</button>
+    <button class="btn" id="btn3"  onclick="location.href = 'addfod.php'" disabled>New Food</button>
 </div>
+<script>
+    function loginControl(){
+        var uname = document.getElementById("unameId").value;
+        var upass = document.getElementById("upassId").value;
+        console.log(uname+" | "+upass);
+        if (uname == "ali" && upass == "1234"){
+            document.getElementById("btn1").disabled = false;
+            document.getElementById("btn2").disabled = false;
+            document.getElementById("btn3").disabled = false;
+        }
+        else{
+            alert("Login information is wrong");
+        }
 
+    }
+</script>
 </body>
 </html>
