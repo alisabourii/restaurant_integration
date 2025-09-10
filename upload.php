@@ -27,10 +27,10 @@ $password   = "";
 $dbname     = "resturantdb";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
-$fd_name = $_GET['name'];
-$fd_desc = $_GET['desc'];
-$fd_price = $_GET['fd_price'];
-$fd_img = $_GET['fd_img'];
+$fd_name  =  $_POST['fd_name'];
+$fd_desc  =  $_POST['fd_desc'];
+$fd_price =  $_POST['fd_price'];
+$fd_img   =  $_POST['fd_img'];
 $conn->query("INSERT INTO `foods`(`fd_name`, `fd_desc`, `fd_price`, `fd_img`, `stok`) 
                     VALUES ('$fd_name','$fd_desc','$fd_price','$fd_img','0')");
 ?>
