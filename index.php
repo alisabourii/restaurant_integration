@@ -19,16 +19,18 @@
 
 </head>
 <body>
+<!---
 <div class="mainButtons">
     <input type="text" id="unameId" placeholder="Username">
     <input type="text" id="upassId" placeholder="Password">
     <button class="btn" onclick="loginControl()">Login</button>
 </div>
+--->
 
 <div class="mainButtons">
-    <button class="btn" id="btn1"  onclick="location.href = 'menu.php'" disabled>Menu</button>
-    <button class="btn" id="btn2"  onclick="location.href = 'setting.php'" disabled>Settings</button>
-    <button class="btn" id="btn3"  onclick="location.href = 'addfod.php'" disabled>New Food</button>
+    <button class="btn" id="btn1"  onclick="location.href = 'menu.php'" >Menu</button>
+    <button class="btn" id="btn2"  onclick="location.href = 'setting.php'" >Settings</button>
+    <button class="btn" id="btn3"  onclick="location.href = 'addfod.php'" >New Food</button>
 </div>
 <script>
     function loginControl(){
