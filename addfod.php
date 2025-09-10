@@ -16,13 +16,12 @@
     <h2>Yemek Ekle</h2>
     <form method="post" action="upload.php" enctype="multipart/form-data">
         <input type="file" name="fd_img" required>
-        <input type="text" name="fd_imgname" placeholder="Fotoğraf Adı" required>
-        <input type="text" name="fd_name" placeholder="Yemek Adı" required>
-        <input type="text" name="fd_desc" placeholder="Açıklama" required>
-        <input type="text" name="fd_price" placeholder="Fiyat" required>
+        <input type="text" id="fd_img" name="fd_img" placeholder="Fotoğraf Adı" required>
+        <input type="text" id="fd_name" name="fd_name" placeholder="Yemek Adı" required>
+        <input type="text" id="fd_desc" name="fd_desc" placeholder="Açıklama" required>
+        <input type="text" id="fd_price" name="fd_price" placeholder="Fiyat" required>
         <button type="submit">Kaydet</button>
     </form>
 </div>
 </body>
 </html>
-dew
