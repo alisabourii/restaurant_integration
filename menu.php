@@ -22,7 +22,7 @@ $result = $conn->query($sql);
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css?v=1.0" rel="stylesheet">
 </head>
 <body>
 <div class="mainButtons noPrint">
@@ -55,7 +55,4 @@ $result = $conn->query($sql);
 </div>
 
 </body>
-<script>
-
-</script>
 </html>
