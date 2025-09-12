@@ -28,9 +28,10 @@ $result = $conn->query($sql);
 <div class="mainButtons noPrint">
     <button class="btn" onclick="location.href = 'index.php'">Main</button>
     <button class="btn" onclick="window.print();" class="noPrint">Print</button>
+    <button class="btn" id="imgGenerate" class="noPrint">Image</button>
     <button class="btn" onclick="location.href = 'setting.php'">Settings</button>
 </div>
-<div class="grid">
+<div class="grid" id="grid">
     <?php
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
@@ -53,6 +54,9 @@ $result = $conn->query($sql);
     $conn->close();
     ?>
 </div>
+<!-- html2canvas CDN -->
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 
+<script src="app.js" type="text/javascript"></script>
 </body>
 </html>
