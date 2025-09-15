@@ -31,6 +31,7 @@
     <button class="btn" id="btn1"  onclick="location.href = 'menu.php'" >Menu</button>
     <button class="btn" id="btn2"  onclick="location.href = 'setting.php'" >Settings</button>
     <button class="btn" id="btn3"  onclick="location.href = 'addfod.php'" >New Food</button>
+    <button class="btn" id="btn4"  onclick="location.href = 'addfod.php'" >Update</button>
 </div>
 <script>
     function loginControl(){
