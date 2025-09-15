@@ -40,7 +40,7 @@ $result = $conn->query($sql);
             <article class="card" aria-label="<?php echo htmlspecialchars($row['fd_name']); ?> ürünü">
                 <img class="card__img" src="src/<?php echo htmlspecialchars($row['fd_img']); ?>" alt="Ürün fotoğrafı: <?php echo htmlspecialchars($row['fd_name']); ?>" />
                 <div class="card__body">
-                    <h3 class="card__title"><?php echo htmlspecialchars($row['fd_name']); ?></h3>
+                    <h3 class="card__title" style='direction: rtl;'><?php echo htmlspecialchars($row['fd_name']); ?></h3>
                     <!--<p class="card__desc"><?php //echo htmlspecialchars($row['fd_desc']); ?></p>-->
                     <div class="card__price"><?php echo htmlspecialchars($row['fd_price']); ?>₺</div>
                 </div>
